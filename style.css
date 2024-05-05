@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-width: 375px;
+    margin-inline: auto;
+}
+
+#calculator {
+    height: 300px;
+    width: 250px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 0%);
+}
+
+#screenResult {
+    grid-column: 1 / 5;
+    grid-row: 1 / 1;       
+    height: 40px;
+    width: 180px;
+    border: 1px solid;
+    margin: 20px 34px 0 34px;
+    background-color: hsl(208, 15%, 42%);
+}
+
+#resultOutput {
+    text-align: right;
+}
+
+#buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 190px;
+    width: 200px;
+    margin: 20px 25px 0 25px;
+    text-align: center;
+}
+
+.buttonCalculator {
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 15px;
+    color: hsl(113, 100%, 49%);
+    background-color: hsl(0, 0%, 0%);
+}
+
+#clear {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+#back {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+#percent {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+}
+
+#division {
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+
+#seven {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+#eight {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+#nine {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+}
+
+#multiply {
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+#four {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+
+#five {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+}
+
+#six {
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+
+#minus {
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+
+#one {
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+}
+
+#two {
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+}
+
+#three {
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+}
+
+#plus {
+    grid-column: 4 / 4;
+    grid-row: 4 / 4;
+}
+
+#egal {
+    grid-column: 4 / 4;
+    grid-row: 5 / 5;
+}
+
+#dotCalculator {
+    grid-column: 3 / 3;
+    grid-row: 5 / 5;
+}
+
+#zero {
+    grid-column: 2 / 2;
+    grid-row: 5 / 5;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+    #calculator {
+        height: 300px;
+        width: 250px;
+    }
+
+    #screenResult {    
+        height: 36px;
+        width: 200px;
+        margin: 15px 25px 0 25px;
+    }
+
+    #resultOutput {
+        text-align: right;
+    }
+
+    #buttonContainer {
+        height: 230px;
+        width: 200px;
+        margin: 15px 25px 0 25px;
+    }
+
+    .buttonCalculator {
+        height: 40px;
+        width: 40px;
+    }
+}
