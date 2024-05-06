@@ -1,5 +1,6 @@
 const buttons = document.querySelectorAll(".number, .operator");
 let userInput = []; 
+let history = [];
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -19,6 +20,7 @@ buttons.forEach(button => {
                 let result = math.evaluate(expression);
                 screen.textContent = result;
                 userInput = [result.toString()];
+                history.push({calculation: expression, result: result});
             } catch (error) {
                 screen.textContent = "Erreur";
             }
@@ -33,3 +35,14 @@ buttons.forEach(button => {
         }
     });
 });
+
+
+function displayHistory() {
+    const historyElement = document.getElementById('history');
+    historyElement.innerHTML = '';
+    for(let i = history.length - 1; i >= 0; i--) {
+        historyElement.innerHTML += `<p>${history[i].calculation} = ${history[i].result}</p>`;
+    }
+}
+
+document.getElementById('historyButton').addEventListener('click', displayHistory);

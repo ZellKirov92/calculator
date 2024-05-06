@@ -1,10 +1,9 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: auto;
     min-width: 375px;
-    margin-inline: auto;
 }
 
 #calculator {
@@ -141,6 +140,24 @@ body {
 #zero {
     grid-column: 2 / 2;
     grid-row: 5 / 5;
+}
+
+#history {
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    color: black;
+}
+
+#historyButton {
+    grid-column: 1 / 1;
+    grid-row: 5 / 5;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 15px;
+    color: hsl(113, 100%, 49%);
+    background-color: hsl(0, 0%, 0%);
 }
 
 @media screen and (min-width: 768px) {
