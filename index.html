@@ -5,37 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Creating a Simple Calculator">
     <title>Calculator</title>
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.0/math.min.js"></script>
-    <script src="./index.js" defer></script>
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
-    <div id="calculator">
-        <div id="screenResult"><p id="resultOutput"></p></div>
-        <div id="buttonContainer">
-            <button type="button" value="C" title="clear" class="operator buttonCalculator" id="clear">C</button>
-            <button type="button" value="←" title="back" class="operator buttonCalculator" id="back">CE</button>
-            <button type="button" value="%" title="percent" class="operator buttonCalculator" id="percent">%</button>
-            <button type="button" value="/" title="division" class="operator buttonCalculator" id="division">&#247;</button>
-            <button type="button" value="7" title="seven" class="number buttonCalculator" id="seven">7</button>
-            <button type="button" value="8" title="eight" class="number buttonCalculator" id="eight">8</button>
-            <button type="button" value="9" title="nine" class="number buttonCalculator" id="nine">9</button>
-            <button type="button" value="*" title="multiply" class="operator buttonCalculator" id="multiply">*</button>
-            <button type="button" value="4" title="four" class="number buttonCalculator" id="four">4</button>
-            <button type="button" value="5" title="five" class="number buttonCalculator" id="five">5</button>
-            <button type="button" value="6" title="six" class="number buttonCalculator" id="six">6</button>
-            <button type="button" value="-" title="minus" class="operator buttonCalculator" id="minus">-</button>
-            <button type="button" value="1" title="one" class="number buttonCalculator" id="one">1</button>
-            <button type="button" value="2" title="two" class="number buttonCalculator" id="two">2</button>
-            <button type="button" value="3" title="three" class="number buttonCalculator" id="three">3</button>
-            <button type="button" value="+" title="plus" class="operator buttonCalculator" id="plus">+</button>
-            <button type="button" value="=" title="egal" class="operator buttonCalculator" id="egal">=</button>
-            <button type="button" value="." title="Dot" class="operator buttonCalculator" id="dotCalculator"><span>.</span></button>
-            <button type="button" title="history" id="historyButton">H</button>
-            <button type="button" value="0" title="zero" class="number buttonCalculator" id="zero"><span>0</span></button>
+    <div id="container">
+        <div id="calculator">
+            <div id="screenResult"><p id="resultOutput"></p></div>
+            <div id="buttonContainer">
+                <button type="button" value="C" title="clear" class="operator buttonCalculator" id="clear">C</button>
+                <button type="button" value="←" title="back" class="operator buttonCalculator" id="back">CE</button>
+                <button type="button" value="%" title="percent" class="operator buttonCalculator" id="percent">%</button>
+                <button type="button" value="/" title="division" class="operator buttonCalculator" id="division">&#247;</button>
+                <button type="button" value="7" title="seven" class="number buttonCalculator" id="seven">7</button>
+                <button type="button" value="8" title="eight" class="number buttonCalculator" id="eight">8</button>
+                <button type="button" value="9" title="nine" class="number buttonCalculator" id="nine">9</button>
+                <button type="button" value="*" title="multiply" class="operator buttonCalculator" id="multiply">*</button>
+                <button type="button" value="4" title="four" class="number buttonCalculator" id="four">4</button>
+                <button type="button" value="5" title="five" class="number buttonCalculator" id="five">5</button>
+                <button type="button" value="6" title="six" class="number buttonCalculator" id="six">6</button>
+                <button type="button" value="-" title="minus" class="operator buttonCalculator" id="minus">-</button>
+                <button type="button" value="1" title="one" class="number buttonCalculator" id="one">1</button>
+                <button type="button" value="2" title="two" class="number buttonCalculator" id="two">2</button>
+                <button type="button" value="3" title="three" class="number buttonCalculator" id="three">3</button>
+                <button type="button" value="+" title="plus" class="operator buttonCalculator" id="plus">+</button>
+                <button type="button" value="=" title="egal" class="operator buttonCalculator" id="egal">=</button>
+                <button type="button" value="." title="Dot" class="operator buttonCalculator" id="dotCalculator"><span>.</span></button>
+                <button type="button" title="history" id="historyButton">H</button>
+                <button type="button" value="0" title="zero" class="number buttonCalculator" id="zero"><span>0</span></button>
+            </div>
+        </div>
+        <div id="history">
+            <p><u>History:</u></p>
         </div>
     </div>
-    <div id="history"></div>
 </body>
 </html>

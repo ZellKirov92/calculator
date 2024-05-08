@@ -27,6 +27,8 @@ buttons.forEach(button => {
         } else if (value === "C") {
             screen.textContent = "";
             userInput = [];
+            history = [];
+            document.getElementById('history').textContent = "";
         } else if (value === "←") {
             if (screen.textContent.length > 0) {
                 screen.textContent = screen.textContent.slice(0, -1);

@@ -4,6 +4,13 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 375px;
+    margin-inline: auto;
+}
+
+#container {
+    position: relative;
+    height: 400px;
+    width: 375px;
 }
 
 #calculator {
@@ -26,6 +33,7 @@ body {
 
 #resultOutput {
     text-align: right;
+    overflow: auto;
 }
 
 #buttonContainer {
@@ -143,10 +151,17 @@ body {
 }
 
 #history {
-    height: 50px;
-    width: 100px;
+    position: absolute;
+    left: 50px;
+    height: 100px;
+    width: 150px;
+    border-bottom: 0;
     font-size: 18px;
-    color: black;
+    text-align: center;
+    overflow: auto;
+    color: hsl(120, 18%, 96%);
+    background-color: hsl(0, 0%, 42%);
+    border: 5px solid hsl(210, 14%, 14%);
 }
 
 #historyButton {
@@ -163,6 +178,12 @@ body {
 @media screen and (min-width: 768px) {
     body {
         width: 768px;
+    }
+
+    #container {
+        position: relative;
+        height: 300px;
+        width: 420px;
     }
 
     #calculator {
@@ -187,6 +208,16 @@ body {
     }
 
     .buttonCalculator {
+        height: 40px;
+        width: 40px;
+    } 
+
+    #history {
+        top: 10px;
+        left: 260px;
+    }
+
+    #historyButton {
         height: 40px;
         width: 40px;
     }
